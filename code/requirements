@@ -1,0 +1,11 @@
+opencv-python
+tqdm
+pillow
+transformers
+diffusers
+accelerate
+datasets
+Pillow
+open_clip_torch
+ftfy
+torch
