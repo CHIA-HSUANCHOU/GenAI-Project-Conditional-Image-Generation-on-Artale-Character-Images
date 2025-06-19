@@ -54,3 +54,11 @@ We evaluated six different combinations of generation settings. Among them, **DD
 2. Under the same number of steps, Classifier-Free Guidance with a scale of **3** generally yields better results than scales of 2 or 4.
 
 3. When guidance is set to 3, setting the number of steps to **15** achieves the best generation quality. Although the scores for steps = 15 and steps = 20 are similar (FID = 59.6989 vs. 59.7125, CLIP-Text Score = 0.3008 vs. 0.3009), we chose **steps = 15 and guidance = 3** as the final inference setting considering the trade-off with generation time.
+
+* Evaluation Metrics
+   1. FID :Measures the distance between feature distributions of generated and real images. Lower is better.
+   2. CLIP Text Score (CLIP-T):Measures the semantic similarity between the generated image and the text prompt using CLIP embeddings. Higher is better.
+   3. CLIP Image Score (CLIP-I):Often used to measure the overall perceptual quality or image similarity.Higher is better.
+
+* Baseline:120/0.25/0.7
+* My final:**59.8987**/**0.2994**/**0.8246**    
